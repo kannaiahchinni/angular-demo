@@ -1,0 +1,21 @@
+{
+  "name": "angular-demo",
+  "version": "1.0.0",
+  "description": "angular demo with node and express",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "angular",
+    "with",
+    "express",
+    "and",
+    "node"
+  ],
+  "author": "aditya",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
