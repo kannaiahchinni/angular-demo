@@ -87,14 +87,24 @@
 
     function homeContoller($scope, $log, restService, $location) {
 
-        $scope.data = '';
+        $scope.dataList = [{
+
+            "HEADER_ID": '114208',
+            "ORDER_NUMBER": "3200016363",
+            "SUBTOTAL": "14",
+            "TAX": "98",
+            "ORDER_TOTAL": "14.98",
+            "CHARGES": "0",
+
+
+}];
         $scope.errorMessage = false;
 
 
         $scope.init = function () {
 
             restService.getProducts().success(function (data) {
-                $scope.data = data;
+                $scope.dataList = data;
                 $scope.errorMessage = false;
 
             }).error(function (error) {

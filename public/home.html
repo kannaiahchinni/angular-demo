@@ -5,9 +5,34 @@
         <p> Error occured with order consumption.. please try again after some time</p>
     </div>
 
-
-    <div ng-if="!errorMessage">
+    <!-- <div ng-if="!errorMessage"> -->
+    <div ng-if="errorMessage">
         <p> here are the order details ....</p>
+
+        <div class="card" ng-repeat="data in dataList">
+
+            <table class="table table-hover table-striped">
+                <tr>
+                    <td>HEADER ID</td>
+                    <td>{{data.HEADER_ID}}</td>
+                </tr>
+                <tr>
+                    <td>ORDER NUMBER</td>
+                    <td>{{data.ORDER_NUMBER}}</td>
+                </tr>
+                <tr>
+                    <td>SUBTOTAL</td>
+                    <td>{{data.SUBTOTAL}}</td>
+                </tr>
+                <tr>
+                    <td>TAX</td>
+                    <td>{{data.TAX}}</td>
+                </tr>
+            </table>
+
+        </div>
+
+
     </div>
 
 
